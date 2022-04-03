@@ -7,12 +7,6 @@ namespace OrderedBehaviors
         public static OrderedBehaviorManager Instance;
         private static readonly float _timedUpdateCheckInterval = 0.05f;
         private float _lastRun = 0f;
-        public class Callback
-        {
-            public OrderedBehaviour SceneComponent;
-            public string GroupId;
-            public int InstanceOrder;
-        }
 
         private void Awake()
         {
